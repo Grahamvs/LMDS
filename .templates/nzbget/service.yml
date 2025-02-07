@@ -8,6 +8,8 @@
     volumes:
       - ./volumes/nzbget/config:/config
       - ./downloads:/downloads
+      - ./ssl:/ssl
     ports:
       - 6789:6789
+      - 6791:6791
     restart: unless-stopped
