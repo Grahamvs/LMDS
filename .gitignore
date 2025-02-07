@@ -3,10 +3,11 @@
 /volumes/
 /LMDSBackups/
 /media/
-/Downloads/
-/downloads/
+/[dD]ownloads/
 /Movies/
 /Music/
+/ssl/
+/ssl
 /TVseries/
 /TransmissionWathFolder/
 /TVrecordings/
