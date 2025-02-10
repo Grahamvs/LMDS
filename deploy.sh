@@ -307,7 +307,7 @@ case $mainmenu_selection in
 		fi
 
 		echo "docker-compose successfully created"
-		echo -e "run \e[104;1mdocker-compose up -d\e[0m to start the stack"
+		echo -e "run \e[104;1msudo docker-compose up -d\e[0m to start the stack"
 	else
 
 		echo "Build cancelled"
