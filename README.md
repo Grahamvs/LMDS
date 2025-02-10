@@ -4,6 +4,16 @@
 
 ## About
 
+This project was forked from https://github.com/GreenFrogSB/LMDS for personal use, as I wanted a way to update settings and apps in the stack that I can easily apply to multiple machines without having to worry about copying files between machines, etc.
+
+I do not know if the original project is still alive, as, at the time of this update, the last commit to the original project was roughly 2 years ago.
+
+<b>Note</b>: The original guide said to install in <code>~/LMDS</code>, but I prefer <code>/opt/LMDS</code>, as that feels like a better, more secure place for it.
+
+<b>Use at own risk...</b>
+
+---
+
 Project goal is to simplify Docker and Docker-compose deployment on Raspberry Pi.
 LMDS will allow you to dynamically choose containers and automate their deployment.
 Create Docker server and start microservices in minutes with LMDS.
@@ -12,27 +22,27 @@ Create Docker server and start microservices in minutes with LMDS.
 
 <ul>
   <li>Portainer - GUI Docker Manager :9000</li>
-  <li> Sonarr : 8989</li>
-  <li> Medusa : 8081</li>
-  <li> Radarr : 7878</li>
-  <li> Lidarr : 8686</li>
-  <li> Bazarr : 6767</li>
-  <li> Jackett : 9117</li>
-  <li> Prowlarr - Jackett alternative (dev) : 9696</li>
+  <li> Sonarr - TV show downloader and organiser : 8989</li>
+  <li> Medusa - Automated TV show downloader (alternative to Sonarr) : 8081</li>
+  <li> Radarr - Movie downloader and organiser : 7878</li>
+  <li> Lidarr – Music downloader and organiser : 8686</li>
+  <li> Bazarr – Subtitles downloader for movies and TV shows : 6767</li>
+  <li> Jackett – Torrent indexer for integrating with apps like Sonarr/Radarr : 9117</li>
+  <li> Prowlarr – Usenet/torrent indexer for integrating with Sonarr, Radarr, Lidarr, and Bazarr. : 9696</li>
   <li> Deluge - Torrent Client : 8112</li>
   <li> qBittorrent - Torrent Client : 15080</li>
   <li> Transmission - Torrent Client : 9091</li>
   <li> NZBGet - Usenet groups client : 6789</li>
   <li> SABnzbd - Usenet groups client : 8080</li>
   <li> JellyFin - Media manager OpenSource : <b>8096</b></li>
-  <li> Emby - Media manager like Plex : <b>8096</b></li>
+  <li> Emby - Media manager (like Plex) : <b>8096</b></li>
   <li> Plex - Media manager : 32400/web</li>
   <li> Ombi - Plex Requests Server : 3579</li>
   <li> Overseerr - Plex Requests Server : 5055</li>
   <li> EmbyStat - Statistics for Emby : 6555</li>
   <li> TVheadend - TV streaming server : 9981 </li>
   <li> NPMP Server - NGINX + PHP + MariaDB + phpMyAdmin: 80 (Instructions: https://greenfrognest.com/LMDSwebServ.php)</li>
-  <li> Pi-Hole - Private DNS sinkhole : 8089 <b>WebPass: <i>greenfrog</i></b></li>
+  <li> Pi-Hole - Private DNS sinkhole : 8089 (<b>WebPass: <i>greenfrog</i></b>)</li>
   <li> VPN-Client - OpenVPN Gateway (Instructions: https://greenfrognest.com/LMDSVPN.php)</li>
   <li> Traefik 2 - Reverse Proxy (Instructions: https://greenfrognest.com/LMDSTraefikProxy.php)</li>
   </ul>
@@ -53,17 +63,17 @@ Blog link: http://greenfrognest.com/lmdsondocker.php
 Static IP address is not absolutely necessary just to try the project to find out if you like it or not, but in case if you would like to properly utilize pi-hole in your network - you would have to point your router towards RPi IP for DNS resolution and having it static would be mandatory.</b>
 
 - install git using a command:
-<pre><code>sudo apt-get install git</code></pre>
+<pre><code>sudo apt install git</code></pre>
 
 - Clone the repository with:
-<pre><code>git clone https://github.com/GreenFrogSB/LMDS.git ~/LMDS</code></pre>
+<pre><code>sudo git clone https://github.com/grahamvs/LMDS.git /opt/LMDS</code></pre>
 
-<i>Do not change name of the folder on your local system it should stay as is for the script to work properly</i>
+<i>Do not change name of the folder ("LMDS") on your local system it should stay as is for the script to work properly</i>
 
 - Enter the directory and run:
 
-<pre><code>cd ~/LMDS</code></pre>
-<pre><code>./deploy.sh</code></pre>
+<pre><code>cd /opt/LMDS</code></pre>
+<pre><code>sudo ./deploy.sh</code></pre>
 
 ## Menu
 
