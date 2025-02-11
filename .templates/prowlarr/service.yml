@@ -6,7 +6,7 @@
       - PGID=1000
       - TZ=UTC
     volumes:
-      - ./volumes/prowlarr/data:/config
+      - ./volumes/prowlarr/config:/config
     ports:
       - 9696:9696
     restart: unless-stopped
