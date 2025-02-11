@@ -7,8 +7,9 @@
       - TZ=UTC
       - UMASK_SET=022 #optional
     volumes:
-      - ./volumes/sonarr/data:/config
+      - ./volumes/sonarr/config:/config
       - ./media/tvshows:/tv
+      - ./media/animation:/animation
       - ./downloads:/downloads
     ports:
       - 8989:8989
