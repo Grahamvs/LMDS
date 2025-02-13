@@ -45,6 +45,7 @@ Create Docker server and start microservices in minutes with LMDS.
   <li> NPMP Server - NGINX + PHP + MariaDB + phpMyAdmin: 80 (Instructions: https://greenfrognest.com/LMDSwebServ.php)</li>
   <li> Pi-Hole - Private DNS sinkhole : 8089 (<b>WebPass: <i>greenfrog</i></b>)</li>
   <li> VPN-Client - OpenVPN Gateway (Instructions: https://greenfrognest.com/LMDSVPN.php)</li>
+  <li> Watchtower - Auto updates docker containers</li>
   <li> Traefik 2 - Reverse Proxy (Instructions: https://greenfrognest.com/LMDSTraefikProxy.php)</li>
   </ul>
 <br>

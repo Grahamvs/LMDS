@@ -1,0 +1,8 @@
+  watchtower:
+    container_name: watchtower
+    image: containrrr/watchtower
+    env_file:
+      - ./services/watchtower/watchtower.env  # check the file for more options to configure  
+    volumes:
+       - /var/run/docker.sock:/var/run/docker.sock   
+    restart: unless-stopped
