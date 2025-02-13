@@ -31,9 +31,9 @@ declare -A cont_array=(
 	[web]="Web Server - NGINX + PHP + MariaDB + phpMyAdmin"
 	[pihole]="Pi-Hole - Private DNS sinkhole"
 	[vpn]="VPN-Client - OpenVPN Gateway"
-	[honeygain]="Check - Earn \$ with LMDS - in main menu"
-	[iproyal]="Check - Earn \$ with LMDS - in main menu"
-  	[peer2profit]="Check - Earn \$ with LMDS - in main menu"
+	[honeygain]="Honeygain - Earn \$ with LMDS - in main menu"
+	[iproyal]="Iproyal - Earn \$ with LMDS - in main menu"
+  	[peer2profit]="Peer2profit - Earn \$ with LMDS - in main menu"
 
 )
 
