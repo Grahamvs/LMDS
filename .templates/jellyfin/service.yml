@@ -10,6 +10,7 @@
       - ./volumes/jellyfin/config:/config
       - ./media/tvshows:/data/tvshows
       - ./media/movies:/data/movies
+      - ./media/animation:/data/animation
       #- /opt/vc/lib:/opt/vc/lib #optional
     ports:
       - 8096:8096
