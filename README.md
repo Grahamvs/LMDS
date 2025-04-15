@@ -21,7 +21,7 @@ Create Docker server and start microservices in minutes with LMDS.
 <b>What is currently a part of the LMDS Stack:</b>
 
 <ul>
-  <li>Portainer - GUI Docker Manager :9000</li>
+  <li>Portainer - GUI Docker Manager : 9000</li>
   <li> Sonarr - TV show downloader and organiser : 8989</li>
   <li> Medusa - Automated TV show downloader (alternative to Sonarr) : 8081</li>
   <li> Radarr - Movie downloader and organiser : 7878</li>
@@ -47,8 +47,10 @@ Create Docker server and start microservices in minutes with LMDS.
   <li> VPN-Client - OpenVPN Gateway (Instructions: https://greenfrognest.com/LMDSVPN.php)</li>
   <li> Watchtower - Auto updates docker containers</li>
   <li> Traefik 2 - Reverse Proxy (Instructions: https://greenfrognest.com/LMDSTraefikProxy.php)</li>
-  </ul>
+</ul>
+
 <br>
+
 <i>Numbers after ":" identify a port that particular container will respond on, i.e. Portainer default port is :9000, point your browser it to your server IP adding :9000 at the end i.e. http://192.168.100.100:9000 you will see Portainer login page.</i>
 
 ### Raspberry Pi LMDS Server Docker Edition
