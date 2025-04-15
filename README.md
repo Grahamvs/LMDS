@@ -46,12 +46,19 @@ Create Docker server and start microservices in minutes with LMDS.
   <li> Pi-Hole - Private DNS sinkhole : 8089 (<b>WebPass: <i>greenfrog</i></b>)</li>
   <li> VPN-Client - OpenVPN Gateway (Instructions: https://greenfrognest.com/LMDSVPN.php)</li>
   <li> Watchtower - Auto updates docker containers</li>
+  <li> Homarr - A simple, yet powerful dashboard for your server : 7575</li>
   <li> Traefik 2 - Reverse Proxy (Instructions: https://greenfrognest.com/LMDSTraefikProxy.php)</li>
 </ul>
 
 <br>
 
 <i>Numbers after ":" identify a port that particular container will respond on, i.e. Portainer default port is :9000, point your browser it to your server IP adding :9000 at the end i.e. http://192.168.100.100:9000 you will see Portainer login page.</i>
+
+### NOTES:
+
+  * Homarr:
+    * Change evironment variable <b>SECRET_ENCRYPTION_KEY</b> for increased security!
+    * You can generate a new key with `openssl rand -hex 32`
 
 ### Raspberry Pi LMDS Server Docker Edition
 
