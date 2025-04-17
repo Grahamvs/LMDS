@@ -1,15 +1,20 @@
   plex:
-    image: ghcr.io/linuxserver/plex:latest
+    image: plexinc/pms-docker:latest
     container_name: plex
     network_mode: host
     environment:
       - PUID=1000
       - PGID=1000
       - VERSION=docker
-      - UMASK_SET=022 #optional
-      # - PLEX_CLAIM= #optional
+      - UMASK_SET=022 # Optional
+      # - PLEX_CLAIM= # Optional - Obtain from https://www.plex.tv/claim/
     volumes:
       - ./volumes/plex/library:/config
-      - ./media/tvshows:/tv
-      - ./media/movies:/movies
+      - ./volumes/plex/transcode:/transcode
+      - ./media/tvshows:/media/tv
+      - ./media/movies:/media/movies
+      - ./media/animation:/media/animation
+      - ./media/music:/media/music
+    devices:
+      - /dev/dri:/dev/dri # Optional: for hardware transcoding
     restart: unless-stopped
