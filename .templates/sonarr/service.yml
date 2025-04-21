@@ -8,6 +8,7 @@
       - UMASK_SET=022 #optional
     volumes:
       - ./volumes/sonarr/config:/config
+      - ./ssl:/ssl
       - ./media/tvshows:/tv
       - ./media/animation:/animation
       - ./downloads:/downloads

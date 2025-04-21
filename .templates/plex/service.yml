@@ -11,6 +11,7 @@
     volumes:
       - ./volumes/plex/library:/config
       - ./volumes/plex/transcode:/transcode
+      - ./ssl:/ssl
       - ./media/tvshows:/media/tv
       - ./media/movies:/media/movies
       - ./media/animation:/media/animation

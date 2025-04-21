@@ -8,6 +8,7 @@
       - UMASK=022 #optional
     volumes:
       - ./volumes/radarr/config:/config
+      - ./ssl:/ssl
       - ./media/movies:/movies
       - ./downloads:/downloads
     ports:

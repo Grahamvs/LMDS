@@ -9,6 +9,7 @@
     volumes:
       - ./volumes/qbittorrent/config:/config
       - ./downloads:/downloads
+      - ./ssl:/ssl
     ports:
       - 6881:6881
       - 6881:6881/udp
