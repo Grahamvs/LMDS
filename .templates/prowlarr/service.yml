@@ -1,5 +1,5 @@
   prowlarr:
-    image: ghcr.io/linuxserver/prowlarr:develop
+    image: lscr.io/linuxserver/prowlarr:latest
     container_name: prowlarr
     environment:
       - PUID=1000
