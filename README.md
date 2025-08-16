@@ -29,6 +29,7 @@ Create Docker server and start microservices in minutes with LMDS.
   <li> Bazarr – Subtitles downloader for movies and TV shows : 6767</li>
   <li> Jackett – Torrent indexer for integrating with apps like Sonarr/Radarr : 9117</li>
   <li> Prowlarr – Usenet/torrent indexer for integrating with Sonarr, Radarr, Lidarr, and Bazarr. : 9696</li>
+  <li> Flaresolverr – Proxy server to bypass Cloudflare protection. : 9696</li>
   <li> Deluge - Torrent Client : 8112</li>
   <li> qBittorrent - Torrent Client : 15080</li>
   <li> Transmission - Torrent Client : 9091</li>
